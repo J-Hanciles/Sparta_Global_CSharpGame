@@ -23,6 +23,9 @@ namespace WPFConnect4
         public MainWindow()
         {
             InitializeComponent();
+
+
         }
+
     }
 }
