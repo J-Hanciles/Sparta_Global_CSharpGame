@@ -59,7 +59,8 @@ namespace WPFConnect4
             }*/
 
                                                          
-        }
+        }        
+
 
         private void InstructionsBtn_Click(object sender, RoutedEventArgs e)
         {
@@ -72,8 +73,14 @@ namespace WPFConnect4
         private void R5C0_Click(object sender, RoutedEventArgs e)
         {
             
-            R0C5.Background = Brushes.Red;
+            R5C0.Background = Brushes.Red;
         }
+
+        /*for (int i = 0; i<length; i++)
+			{
+
+
+			}*/
     }
         
 }
