@@ -22,10 +22,59 @@ namespace WPFConnect4
     {
         public MainWindow()
         {
+            int moveone = 1;
+            int movetwo = 2;
+
+            int player1 = moveone;
+            int player2 = movetwo;
+
+
+            //int connect4TableContents = connect4Table.RowDefinitions.Count;
+
             InitializeComponent();
 
 
+            /*for (int i = 0; i < connect4Table.ColumnDefinitions.Count; i++)
+            {
+
+                for (int x = 0; x < connect4Table.RowDefinitions.Count; x++)
+                {
+                    TextBlock btc = new TextBlock();
+                    btc.Background = Brushes.Black;
+
+                    TextBlock rtc = new TextBlock();
+                    rtc.Background = Brushes.Red;
+
+                    if (true)
+                    {
+
+                    }
+
+                    Grid.SetColumn(btc, i);
+                    connect4Table.Children.Add(btc);
+
+
+                }
+
+            }*/
+
+                                                         
         }
 
+        private void InstructionsBtn_Click(object sender, RoutedEventArgs e)
+        {
+            instructions win = new instructions();
+            win.Show();
+
+            
+        }
+
+        private void R5C0_Click(object sender, RoutedEventArgs e)
+        {
+            
+            R0C5.Background = Brushes.Red;
+        }
     }
+        
 }
+
