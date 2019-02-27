@@ -10,7 +10,7 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-
+            
 
             /*int[][,] intJaggedArray = new int[3][,];
 
@@ -30,10 +30,18 @@ namespace ConsoleApp1
 
 
 
-            for (int i = 0; i < length; i++)
+            /*foreach (var item in strJaggedArrayButtons)
             {
+                if ()
+                {
 
-            }
+                }
+
+                
+            }*/
+
+
+
             strJaggedArrayButtons[1,0] = new string[3, 4] { { "10", "11", "12", "13" }, { "10", "00", "20", "30" }, { "10", "20", "30", "40" } };
             strJaggedArrayButtons[2,0] = new string[4, 4] { { "20", "21", "22", "23" }, { "20", "10", "00", "30" }, { "20", "10", "30", "40" }, { "20", "30", "40", "50" } };
             strJaggedArrayButtons[3,0] = new string[4, 4] { { "30", "31", "32", "33" }, { "30", "20", "10", "40" }, { "30", "20", "40", "50" }, { "30", "20", "10", "00" } };
@@ -44,10 +52,10 @@ namespace ConsoleApp1
             strJaggedArrayButtons[2,1] = new string[4,4] { { "20", "21", "22", "23" }, { "20", "10", "00", "30" }, { "20", "10", "30", "40" }, { "20", "30", "40", "50" } };
             strJaggedArrayButtons[3,1] = new string[4,4] { { "30", "31", "32", "33" }, { "30", "20", "10", "40" }, { "30", "20", "40", "50" }, { "30", "20", "10", "00" } };
             strJaggedArrayButtons[4,1] = new string[3,4] { { "40", "41", "42", "43" }, { "40", "30", "20", "50" }, { "40", "30", "20", "10" } };
-            strJaggedArrayButtons[5,1] = new string[2,2] { { "1, 3, 0, 0" }, { "50, 40, 30, 20" } };
+            //strJaggedArrayButtons[5,1] = new string[2,2] { { "1, 3, 0, 0" }, { "50, 40, 30, 20" } };
 
 
-            Console.WriteLine(strJaggedArrayButtons[0,0][1, 1]); // 4
+            
 
             Console.WriteLine(strJaggedArrayButtons[1,0][1, 3]); // 5
 

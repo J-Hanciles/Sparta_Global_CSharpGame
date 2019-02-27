@@ -94,19 +94,19 @@ namespace WPFConnect4
             
             
         }
-        private void checkWinner(string tag)
+        /*private void checkWinner(string tag)
         {
 
 
 
-        }
-        public void CheckWin(Button bt)
+        }*/
+        /*public void CheckWin(Button bt)
         {
             //get the R and c of this button
             //use the array index to retrive all the possible moves of this array
             //in the top right bottom and left position
 
-        }
+        }*/
 
 
         private void checkWin(string tag)
@@ -785,18 +785,847 @@ namespace WPFConnect4
             }
             if(tag == "00")
             {
-                if (R1C0.Background.ToString() == R1C0.Background.ToString() && R1C0.Background.ToString() == R2C0.Background.ToString() && R2C0.Background.ToString() == R3C0.Background.ToString())
+                if (R0C0.Background.ToString() == R1C0.Background.ToString() && R1C0.Background.ToString() == R2C0.Background.ToString() && R2C0.Background.ToString() == R3C0.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "10")
+            {
+                if (R1C0.Background.ToString() == R0C0.Background.ToString() && R1C0.Background.ToString() == R2C0.Background.ToString() && R2C0.Background.ToString() == R3C0.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "10")
+            {
+                if (R1C0.Background.ToString() == R2C0.Background.ToString() && R2C0.Background.ToString() == R3C0.Background.ToString() && R3C0.Background.ToString() == R4C0.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "20")
+            {
+                if (R2C0.Background.ToString() == R1C0.Background.ToString() && R1C0.Background.ToString() == R0C0.Background.ToString() && R2C0.Background.ToString() == R3C0.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "20")
+            {
+                if (R2C0.Background.ToString() == R1C0.Background.ToString() && R2C0.Background.ToString() == R3C0.Background.ToString() && R3C0.Background.ToString() == R4C0.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "20")
+            {
+                if (R2C0.Background.ToString() == R3C0.Background.ToString() && R3C0.Background.ToString() == R4C0.Background.ToString() && R4C0.Background.ToString() == R5C0.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "30")
+            {
+                if (R3C0.Background.ToString() == R2C0.Background.ToString() && R2C0.Background.ToString() == R1C0.Background.ToString() && R1C0.Background.ToString() == R0C0.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "30")
+            {
+                if (R3C0.Background.ToString() == R2C0.Background.ToString() && R2C0.Background.ToString() == R1C0.Background.ToString() && R3C0.Background.ToString() == R4C0.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "30")
+            {
+                if (R3C0.Background.ToString() == R2C0.Background.ToString() && R3C0.Background.ToString() == R4C0.Background.ToString() && R4C0.Background.ToString() == R5C0.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "40")
+            {
+                if (R4C0.Background.ToString() == R3C0.Background.ToString() && R3C0.Background.ToString() == R2C0.Background.ToString() && R2C0.Background.ToString() == R1C0.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "40")
+            {
+                if (R4C0.Background.ToString() == R3C0.Background.ToString() && R3C0.Background.ToString() == R2C0.Background.ToString() && R4C0.Background.ToString() == R5C0.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "50")
+            {
+                if (R5C0.Background.ToString() == R4C0.Background.ToString() && R4C0.Background.ToString() == R3C0.Background.ToString() && R3C0.Background.ToString() == R2C0.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "01")
+            {
+                if (R0C1.Background.ToString() == R1C1.Background.ToString() && R1C1.Background.ToString() == R2C1.Background.ToString() && R2C1.Background.ToString() == R3C1.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "11")
+            {
+                if (R1C1.Background.ToString() == R0C1.Background.ToString() && R1C1.Background.ToString() == R2C1.Background.ToString() && R2C1.Background.ToString() == R3C1.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "11")
+            {
+                if (R1C1.Background.ToString() == R2C1.Background.ToString() && R2C1.Background.ToString() == R3C1.Background.ToString() && R3C1.Background.ToString() == R4C1.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "21")
+            {
+                if (R2C1.Background.ToString() == R1C1.Background.ToString() && R1C1.Background.ToString() == R0C1.Background.ToString() && R2C1.Background.ToString() == R3C1.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "21")
+            {
+                if (R2C1.Background.ToString() == R1C1.Background.ToString() && R2C1.Background.ToString() == R3C1.Background.ToString() && R3C1.Background.ToString() == R4C1.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "21")
+            {
+                if (R2C1.Background.ToString() == R3C1.Background.ToString() && R3C1.Background.ToString() == R4C1.Background.ToString() && R4C1.Background.ToString() == R5C1.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "31")
+            {
+                if (R3C1.Background.ToString() == R2C1.Background.ToString() && R2C1.Background.ToString() == R1C1.Background.ToString() && R1C1.Background.ToString() == R0C1.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "31")
+            {
+                if (R3C1.Background.ToString() == R2C1.Background.ToString() && R2C1.Background.ToString() == R1C1.Background.ToString() && R3C1.Background.ToString() == R4C1.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "31")
+            {
+                if (R3C1.Background.ToString() == R2C1.Background.ToString() && R3C1.Background.ToString() == R4C1.Background.ToString() && R4C1.Background.ToString() == R5C1.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "41")
+            {
+                if (R4C0.Background.ToString() == R3C1.Background.ToString() && R3C1.Background.ToString() == R2C1.Background.ToString() && R2C1.Background.ToString() == R1C1.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "41")
+            {
+                if (R4C1.Background.ToString() == R3C1.Background.ToString() && R3C1.Background.ToString() == R2C1.Background.ToString() && R4C1.Background.ToString() == R5C1.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "51")
+            {
+                if (R5C1.Background.ToString() == R4C1.Background.ToString() && R4C1.Background.ToString() == R3C1.Background.ToString() && R3C1.Background.ToString() == R2C1.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "02")
+            {
+                if (R0C2.Background.ToString() == R1C2.Background.ToString() && R1C2.Background.ToString() == R2C2.Background.ToString() && R2C2.Background.ToString() == R3C2.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "12")
+            {
+                if (R1C2.Background.ToString() == R0C2.Background.ToString() && R1C2.Background.ToString() == R2C2.Background.ToString() && R2C2.Background.ToString() == R3C2.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "12")
+            {
+                if (R1C2.Background.ToString() == R2C2.Background.ToString() && R2C2.Background.ToString() == R3C2.Background.ToString() && R3C2.Background.ToString() == R4C2.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "22")
+            {
+                if (R2C2.Background.ToString() == R1C2.Background.ToString() && R1C2.Background.ToString() == R0C2.Background.ToString() && R2C2.Background.ToString() == R3C2.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "22")
+            {
+                if (R2C2.Background.ToString() == R1C2.Background.ToString() && R2C2.Background.ToString() == R3C2.Background.ToString() && R3C2.Background.ToString() == R4C2.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "22")
+            {
+                if (R2C2.Background.ToString() == R3C2.Background.ToString() && R3C2.Background.ToString() == R4C2.Background.ToString() && R4C2.Background.ToString() == R5C2.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "32")
+            {
+                if (R3C2.Background.ToString() == R2C2.Background.ToString() && R2C2.Background.ToString() == R1C2.Background.ToString() && R1C2.Background.ToString() == R0C2.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "32")
+            {
+                if (R3C2.Background.ToString() == R2C2.Background.ToString() && R2C2.Background.ToString() == R1C2.Background.ToString() && R3C2.Background.ToString() == R4C2.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "32")
+            {
+                if (R3C2.Background.ToString() == R2C2.Background.ToString() && R3C2.Background.ToString() == R4C2.Background.ToString() && R4C2.Background.ToString() == R5C2.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "42")
+            {
+                if (R4C2.Background.ToString() == R3C2.Background.ToString() && R3C2.Background.ToString() == R2C2.Background.ToString() && R2C2.Background.ToString() == R1C2.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "42")
+            {
+                if (R4C2.Background.ToString() == R3C2.Background.ToString() && R3C2.Background.ToString() == R2C2.Background.ToString() && R4C2.Background.ToString() == R5C2.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "52")
+            {
+                if (R5C2.Background.ToString() == R4C2.Background.ToString() && R4C2.Background.ToString() == R3C2.Background.ToString() && R3C2.Background.ToString() == R2C2.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "03")
+            {
+                if (R0C3.Background.ToString() == R1C3.Background.ToString() && R1C3.Background.ToString() == R2C3.Background.ToString() && R2C3.Background.ToString() == R3C3.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "13")
+            {
+                if (R1C3.Background.ToString() == R0C3.Background.ToString() && R1C3.Background.ToString() == R2C3.Background.ToString() && R2C3.Background.ToString() == R3C3.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "13")
+            {
+                if (R1C3.Background.ToString() == R2C3.Background.ToString() && R2C3.Background.ToString() == R3C3.Background.ToString() && R3C3.Background.ToString() == R4C3.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "23")
+            {
+                if (R2C3.Background.ToString() == R1C3.Background.ToString() && R1C3.Background.ToString() == R0C3.Background.ToString() && R2C3.Background.ToString() == R3C3.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "23")
+            {
+                if (R2C3.Background.ToString() == R1C3.Background.ToString() && R2C3.Background.ToString() == R3C3.Background.ToString() && R3C3.Background.ToString() == R4C3.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "23")
+            {
+                if (R2C3.Background.ToString() == R3C3.Background.ToString() && R3C3.Background.ToString() == R4C3.Background.ToString() && R4C3.Background.ToString() == R5C3.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "33")
+            {
+                if (R3C3.Background.ToString() == R2C3.Background.ToString() && R2C3.Background.ToString() == R1C3.Background.ToString() && R1C3.Background.ToString() == R0C3.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "33")
+            {
+                if (R3C3.Background.ToString() == R2C3.Background.ToString() && R2C3.Background.ToString() == R1C3.Background.ToString() && R3C3.Background.ToString() == R4C3.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "33")
+            {
+                if (R3C3.Background.ToString() == R2C3.Background.ToString() && R3C3.Background.ToString() == R4C3.Background.ToString() && R4C3.Background.ToString() == R5C3.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "43")
+            {
+                if (R4C3.Background.ToString() == R3C3.Background.ToString() && R3C3.Background.ToString() == R2C3.Background.ToString() && R2C3.Background.ToString() == R1C3.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "43")
+            {
+                if (R4C3.Background.ToString() == R3C3.Background.ToString() && R3C3.Background.ToString() == R2C3.Background.ToString() && R4C3.Background.ToString() == R5C3.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "53")
+            {
+                if (R5C3.Background.ToString() == R4C3.Background.ToString() && R4C3.Background.ToString() == R3C3.Background.ToString() && R3C3.Background.ToString() == R2C3.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "04")
+            {
+                if (R0C4.Background.ToString() == R1C4.Background.ToString() && R1C4.Background.ToString() == R2C4.Background.ToString() && R2C4.Background.ToString() == R3C4.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "14")
+            {
+                if (R1C4.Background.ToString() == R0C4.Background.ToString() && R1C4.Background.ToString() == R2C4.Background.ToString() && R2C4.Background.ToString() == R3C4.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "14")
+            {
+                if (R1C4.Background.ToString() == R2C4.Background.ToString() && R2C4.Background.ToString() == R3C4.Background.ToString() && R3C4.Background.ToString() == R4C4.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "24")
+            {
+                if (R2C4.Background.ToString() == R1C4.Background.ToString() && R1C4.Background.ToString() == R0C4.Background.ToString() && R2C4.Background.ToString() == R3C4.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "24")
+            {
+                if (R2C4.Background.ToString() == R1C4.Background.ToString() && R2C4.Background.ToString() == R3C4.Background.ToString() && R3C4.Background.ToString() == R4C4.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "24")
+            {
+                if (R2C4.Background.ToString() == R3C4.Background.ToString() && R3C4.Background.ToString() == R4C4.Background.ToString() && R4C4.Background.ToString() == R5C4.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "34")
+            {
+                if (R3C4.Background.ToString() == R2C4.Background.ToString() && R2C4.Background.ToString() == R1C4.Background.ToString() && R1C4.Background.ToString() == R0C4.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "34")
+            {
+                if (R3C4.Background.ToString() == R2C4.Background.ToString() && R2C4.Background.ToString() == R1C4.Background.ToString() && R3C4.Background.ToString() == R4C4.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "34")
+            {
+                if (R3C4.Background.ToString() == R2C4.Background.ToString() && R3C4.Background.ToString() == R4C4.Background.ToString() && R4C4.Background.ToString() == R5C4.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "44")
+            {
+                if (R4C4.Background.ToString() == R3C4.Background.ToString() && R3C4.Background.ToString() == R2C4.Background.ToString() && R2C4.Background.ToString() == R1C4.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "44")
+            {
+                if (R4C4.Background.ToString() == R3C4.Background.ToString() && R3C4.Background.ToString() == R2C4.Background.ToString() && R4C4.Background.ToString() == R5C4.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "54")
+            {
+                if (R5C4.Background.ToString() == R4C4.Background.ToString() && R4C4.Background.ToString() == R3C4.Background.ToString() && R3C4.Background.ToString() == R2C4.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "05")
+            {
+                if (R0C5.Background.ToString() == R1C5.Background.ToString() && R1C5.Background.ToString() == R2C5.Background.ToString() && R2C5.Background.ToString() == R3C5.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "15")
+            {
+                if (R1C5.Background.ToString() == R0C5.Background.ToString() && R1C5.Background.ToString() == R2C5.Background.ToString() && R2C5.Background.ToString() == R3C5.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "15")
+            {
+                if (R1C5.Background.ToString() == R2C5.Background.ToString() && R2C5.Background.ToString() == R3C5.Background.ToString() && R3C5.Background.ToString() == R4C5.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "25")
+            {
+                if (R2C5.Background.ToString() == R1C5.Background.ToString() && R1C5.Background.ToString() == R0C5.Background.ToString() && R2C5.Background.ToString() == R3C5.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "25")
+            {
+                if (R2C5.Background.ToString() == R1C5.Background.ToString() && R2C5.Background.ToString() == R3C5.Background.ToString() && R3C5.Background.ToString() == R4C5.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "25")
+            {
+                if (R2C5.Background.ToString() == R3C5.Background.ToString() && R3C5.Background.ToString() == R4C5.Background.ToString() && R4C5.Background.ToString() == R5C5.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "35")
+            {
+                if (R3C5.Background.ToString() == R2C5.Background.ToString() && R2C5.Background.ToString() == R1C5.Background.ToString() && R1C5.Background.ToString() == R0C5.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "35")
+            {
+                if (R3C5.Background.ToString() == R2C5.Background.ToString() && R2C5.Background.ToString() == R1C5.Background.ToString() && R3C5.Background.ToString() == R4C5.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "35")
+            {
+                if (R3C5.Background.ToString() == R2C5.Background.ToString() && R3C5.Background.ToString() == R4C5.Background.ToString() && R4C5.Background.ToString() == R5C5.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "45")
+            {
+                if (R4C5.Background.ToString() == R3C5.Background.ToString() && R3C5.Background.ToString() == R2C5.Background.ToString() && R2C5.Background.ToString() == R1C5.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "45")
+            {
+                if (R4C5.Background.ToString() == R3C5.Background.ToString() && R3C5.Background.ToString() == R2C5.Background.ToString() && R4C5.Background.ToString() == R5C5.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "55")
+            {
+                if (R5C5.Background.ToString() == R4C5.Background.ToString() && R4C5.Background.ToString() == R3C5.Background.ToString() && R3C5.Background.ToString() == R2C5.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "06")
+            {
+                if (R0C6.Background.ToString() == R1C6.Background.ToString() && R1C6.Background.ToString() == R2C6.Background.ToString() && R2C6.Background.ToString() == R3C6.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "16")
+            {
+                if (R1C6.Background.ToString() == R0C6.Background.ToString() && R1C6.Background.ToString() == R2C6.Background.ToString() && R2C6.Background.ToString() == R3C6.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "16")
+            {
+                if (R1C6.Background.ToString() == R2C6.Background.ToString() && R2C6.Background.ToString() == R3C6.Background.ToString() && R3C6.Background.ToString() == R4C6.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "26")
+            {
+                if (R2C6.Background.ToString() == R1C6.Background.ToString() && R1C6.Background.ToString() == R0C6.Background.ToString() && R2C6.Background.ToString() == R3C6.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "26")
+            {
+                if (R2C6.Background.ToString() == R1C6.Background.ToString() && R2C6.Background.ToString() == R3C6.Background.ToString() && R3C6.Background.ToString() == R4C6.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "26")
+            {
+                if (R2C6.Background.ToString() == R3C6.Background.ToString() && R3C6.Background.ToString() == R4C6.Background.ToString() && R4C6.Background.ToString() == R5C6.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "36")
+            {
+                if (R3C6.Background.ToString() == R2C6.Background.ToString() && R2C6.Background.ToString() == R1C6.Background.ToString() && R1C6.Background.ToString() == R0C6.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "36")
+            {
+                if (R3C6.Background.ToString() == R2C6.Background.ToString() && R2C6.Background.ToString() == R1C6.Background.ToString() && R3C6.Background.ToString() == R4C6.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "36")
+            {
+                if (R3C6.Background.ToString() == R2C6.Background.ToString() && R3C6.Background.ToString() == R4C6.Background.ToString() && R4C6.Background.ToString() == R5C6.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "46")
+            {
+                if (R4C6.Background.ToString() == R3C6.Background.ToString() && R3C6.Background.ToString() == R2C6.Background.ToString() && R2C6.Background.ToString() == R1C6.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "46")
+            {
+                if (R4C6.Background.ToString() == R3C6.Background.ToString() && R3C6.Background.ToString() == R2C6.Background.ToString() && R4C6.Background.ToString() == R5C6.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "56")
+            {
+                if (R5C6.Background.ToString() == R4C6.Background.ToString() && R4C6.Background.ToString() == R3C6.Background.ToString() && R3C6.Background.ToString() == R2C6.Background.ToString())
                 {
                     MessageBox.Show("Winner");
                 }
             }
             if (tag == "00")
             {
-                if (R1C0.Background.ToString() == R1C0.Background.ToString() && R1C0.Background.ToString() == R2C0.Background.ToString() && R2C0.Background.ToString() == R3C0.Background.ToString())
+                if (R0C0.Background.ToString() == R1C1.Background.ToString() && R1C1.Background.ToString() == R2C2.Background.ToString() && R2C2.Background.ToString() == R3C3.Background.ToString())
                 {
                     MessageBox.Show("Winner");
                 }
             }
+            if (tag == "01")
+            {
+                if (R0C1.Background.ToString() == R1C2.Background.ToString() && R1C2.Background.ToString() == R2C3.Background.ToString() && R2C3.Background.ToString() == R3C4.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "02")
+            {
+                if (R0C2.Background.ToString() == R1C3.Background.ToString() && R1C3.Background.ToString() == R2C4.Background.ToString() && R2C4.Background.ToString() == R3C5.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "03")
+            {
+                if (R0C3.Background.ToString() == R1C4.Background.ToString() && R1C4.Background.ToString() == R2C5.Background.ToString() && R2C5.Background.ToString() == R3C6.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "10")
+            {
+                if (R1C0.Background.ToString() == R2C1.Background.ToString() && R2C1.Background.ToString() == R3C2.Background.ToString() && R3C2.Background.ToString() == R4C3.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "11")
+            {
+                if (R1C1.Background.ToString() == R0C0.Background.ToString() && R1C1.Background.ToString() == R2C2.Background.ToString() && R2C2.Background.ToString() == R3C3.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "11")
+            {
+                if (R1C1.Background.ToString() == R2C2.Background.ToString() && R2C2.Background.ToString() == R3C3.Background.ToString() && R3C3.Background.ToString() == R4C4.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "12")
+            {
+                if (R1C2.Background.ToString() == R0C1.Background.ToString() && R1C2.Background.ToString() == R2C3.Background.ToString() && R2C3.Background.ToString() == R3C4.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "12")
+            {
+                if (R1C2.Background.ToString() == R2C3.Background.ToString() && R2C3.Background.ToString() == R3C4.Background.ToString() && R3C4.Background.ToString() == R4C5.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "13")
+            {
+                if (R1C3.Background.ToString() == R0C2.Background.ToString() && R1C3.Background.ToString() == R2C4.Background.ToString() && R2C4.Background.ToString() == R3C5.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "13")
+            {
+                if (R1C3.Background.ToString() == R2C4.Background.ToString() && R2C4.Background.ToString() == R3C5.Background.ToString() && R3C5.Background.ToString() == R4C6.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "14")
+            {
+                if (R1C4.Background.ToString() == R0C3.Background.ToString() && R1C1.Background.ToString() == R2C5.Background.ToString() && R2C5.Background.ToString() == R3C6.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "20")
+            {
+                if (R2C0.Background.ToString() == R3C1.Background.ToString() && R3C1.Background.ToString() == R4C2.Background.ToString() && R5C3.Background.ToString() == R5C3.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "21")
+            {
+                if (R2C1.Background.ToString() == R1C0.Background.ToString() && R2C1.Background.ToString() == R3C2.Background.ToString() && R3C2.Background.ToString() == R4C3.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "21")
+            {
+                if (R2C1.Background.ToString() == R3C2.Background.ToString() && R3C2.Background.ToString() == R4C3.Background.ToString() && R4C3.Background.ToString() == R5C4.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "22")
+            {
+                if (R2C2.Background.ToString() == R1C1.Background.ToString() && R1C1.Background.ToString() == R0C0.Background.ToString() && R2C2.Background.ToString() == R3C3.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "22")
+            {
+                if (R2C2.Background.ToString() == R1C1.Background.ToString() && R2C2.Background.ToString() == R3C3.Background.ToString() && R3C3.Background.ToString() == R4C4.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "22")
+            {
+                if (R2C2.Background.ToString() == R3C3.Background.ToString() && R3C3.Background.ToString() == R4C4.Background.ToString() && R4C4.Background.ToString() == R5C5.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "23")
+            {
+                if (R2C3.Background.ToString() == R1C2.Background.ToString() && R1C2.Background.ToString() == R1C0.Background.ToString() && R2C3.Background.ToString() == R3C4.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "23")
+            {
+                if (R2C3.Background.ToString() == R1C2.Background.ToString() && R2C3.Background.ToString() == R3C4.Background.ToString() && R3C4.Background.ToString() == R4C5.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "23")
+            {
+                if (R2C3.Background.ToString() == R3C4.Background.ToString() && R3C4.Background.ToString() == R4C5.Background.ToString() && R4C5.Background.ToString() == R5C6.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "24")
+            {
+                if (R2C4.Background.ToString() == R1C3.Background.ToString() && R1C3.Background.ToString() == R0C2.Background.ToString() && R2C4.Background.ToString() == R3C5.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "24")
+            {
+                if (R2C4.Background.ToString() == R1C3.Background.ToString() && R2C4.Background.ToString() == R3C5.Background.ToString() && R3C5.Background.ToString() == R4C6.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "25")
+            {
+                if (R2C5.Background.ToString() == R1C4.Background.ToString() && R1C4.Background.ToString() == R0C3.Background.ToString() && R2C5.Background.ToString() == R3C6.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "31")
+            {
+                if (R3C1.Background.ToString() == R2C0.Background.ToString() && R3C1.Background.ToString() == R4C2.Background.ToString() && R4C2.Background.ToString() == R5C3.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "32")
+            {
+                if (R3C2.Background.ToString() == R2C1.Background.ToString() && R2C1.Background.ToString() == R1C0.Background.ToString() && R3C2.Background.ToString() == R4C3.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "32")
+            {
+                if (R3C2.Background.ToString() == R2C1.Background.ToString() && R3C3.Background.ToString() == R4C3.Background.ToString() && R4C3.Background.ToString() == R5C4.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "33")
+            {
+                if (R3C3.Background.ToString() == R2C2.Background.ToString() && R2C2.Background.ToString() == R1C1.Background.ToString() && R1C1.Background.ToString() == R0C0.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "33")
+            {
+                if (R3C3.Background.ToString() == R2C2.Background.ToString() && R2C2.Background.ToString() == R1C1.Background.ToString() && R3C3.Background.ToString() == R4C4.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "33")
+            {
+                if (R3C3.Background.ToString() == R2C2.Background.ToString() && R3C3.Background.ToString() == R4C4.Background.ToString() && R4C4.Background.ToString() == R5C5.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "34")
+            {
+                if (R3C4.Background.ToString() == R2C3.Background.ToString() && R2C3.Background.ToString() == R1C2.Background.ToString() && R1C2.Background.ToString() == R0C1.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "34")
+            {
+                if (R3C4.Background.ToString() == R2C3.Background.ToString() && R2C3.Background.ToString() == R1C2.Background.ToString() && R3C4.Background.ToString() == R4C5.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "34")
+            {
+                if (R3C4.Background.ToString() == R2C3.Background.ToString() && R3C4.Background.ToString() == R4C5.Background.ToString() && R4C5.Background.ToString() == R5C6.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "35")
+            {
+                if (R3C5.Background.ToString() == R2C4.Background.ToString() && R2C4.Background.ToString() == R1C3.Background.ToString() && R1C3.Background.ToString() == R0C2.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "35")
+            {
+                if (R3C5.Background.ToString() == R2C3.Background.ToString() && R3C4.Background.ToString() == R2C4.Background.ToString() && R3C5.Background.ToString() == R4C6.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "36")
+            {
+                if (R3C3.Background.ToString() == R2C5.Background.ToString() && R2C5.Background.ToString() == R1C4.Background.ToString() && R1C4.Background.ToString() == R0C3.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+
+
+
 
         }
 
