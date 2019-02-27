@@ -1,0 +1,16 @@
+﻿<Window x:Class="WPFConnect4.MainMenu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFConnect4"
+        mc:Ignorable="d"
+        Title="MainMenu" Height="450" Width="800">
+    <Grid Background="#FFB6B6B6">
+        <Button x:Name="vsPerson" Content="VS Person" HorizontalAlignment="Left" Margin="155,292,0,0" VerticalAlignment="Top" Width="150" Click="GameStart_Click" Height="50"/>
+        <Button x:Name="vsComputer" Content="VS Computer" HorizontalAlignment="Left" Margin="327,292,0,0" VerticalAlignment="Top" Width="150" Height="50" Click="VsComputer_Click"/>
+        <Button x:Name="instructionBtn" Content="Instructions" HorizontalAlignment="Left" Margin="499,292,0,0" VerticalAlignment="Top" Width="150" Height="50" Click="InstructionBtn_Click"/>
+        <Label FontSize="72" Content="C  nnect 4" HorizontalAlignment="Left" Margin="155,161,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

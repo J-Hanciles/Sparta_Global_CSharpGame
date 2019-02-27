@@ -28,5 +28,6 @@ namespace WPFConnect4
         {
             Close();
         }
+        
     }
 }
