@@ -22,16 +22,17 @@ namespace WPFConnect4
     {
         int gridNum = 42;
 
-        string[,] grid = new string[6, 7]
+        /*Button[,] grid = new Button[6, 7]
         {
-                {"00", "01", "02", "03", "04", "05", "06"},
-                {"10", "11", "12", "13", "14", "15", "16"},
-                {"20", "21", "22", "23", "24", "25", "26"},
-                {"30", "31", "32", "33", "34", "35", "36"},
-                {"40", "41", "42", "43", "44", "45", "46"},
-                {"50", "51", "52", "53", "54", "55", "56"}
-        };
+            {, , , , , , },
+            {, , , , , , },
+            {, , , , , , },
+            {, , , , , , },
+            {, , , , , , },
+            {, , , , , , }
+        };*/
 
+        ///Grid[2,2] = ;
 
         public PvPWindow()
         {
@@ -93,6 +94,20 @@ namespace WPFConnect4
             
             
         }
+        private void checkWinner(string tag)
+        {
+
+
+
+        }
+        public void CheckWin(Button bt)
+        {
+            //get the R and c of this button
+            //use the array index to retrive all the possible moves of this array
+            //in the top right bottom and left position
+
+        }
+
 
         private void checkWin(string tag)
         {
@@ -764,6 +779,20 @@ namespace WPFConnect4
             if (tag == "56")
             {
                 if (R5C6.Background.ToString() == R5C5.Background.ToString() && R5C5.Background.ToString() == R5C4.Background.ToString() && R5C4.Background.ToString() == R5C3.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if(tag == "00")
+            {
+                if (R1C0.Background.ToString() == R1C0.Background.ToString() && R1C0.Background.ToString() == R2C0.Background.ToString() && R2C0.Background.ToString() == R3C0.Background.ToString())
+                {
+                    MessageBox.Show("Winner");
+                }
+            }
+            if (tag == "00")
+            {
+                if (R1C0.Background.ToString() == R1C0.Background.ToString() && R1C0.Background.ToString() == R2C0.Background.ToString() && R2C0.Background.ToString() == R3C0.Background.ToString())
                 {
                     MessageBox.Show("Winner");
                 }
