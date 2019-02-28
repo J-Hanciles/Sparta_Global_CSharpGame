@@ -7,10 +7,11 @@
         mc:Ignorable="d"
         Title="MainMenu" Height="450" Width="800">
     <Grid Background="#FFB6B6B6">
+        <Label FontSize="72" Content="C  nnect 4" HorizontalAlignment="Left" Margin="155,161,0,0" VerticalAlignment="Top"/>
         <Button x:Name="vsPerson" Content="VS Person" HorizontalAlignment="Left" Margin="155,292,0,0" VerticalAlignment="Top" Width="150" Click="GameStart_Click" Height="50"/>
         <Button x:Name="vsComputer" Content="VS Computer" HorizontalAlignment="Left" Margin="327,292,0,0" VerticalAlignment="Top" Width="150" Height="50" Click="VsComputer_Click"/>
         <Button x:Name="instructionBtn" Content="Instructions" HorizontalAlignment="Left" Margin="499,292,0,0" VerticalAlignment="Top" Width="150" Height="50" Click="InstructionBtn_Click"/>
-        <Label FontSize="72" Content="C  nnect 4" HorizontalAlignment="Left" Margin="155,161,0,0" VerticalAlignment="Top"/>
+        <Image x:Name="tokenSpacing" HorizontalAlignment="Left" Height="160" VerticalAlignment="Top" Width="40" Margin="206,83,0,0"/>
 
     </Grid>
 </Window>

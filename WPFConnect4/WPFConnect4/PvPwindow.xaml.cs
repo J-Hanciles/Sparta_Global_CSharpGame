@@ -46,25 +46,10 @@ namespace WPFConnect4
            
         }
 
-        private void NewGameBtn_Click(object sender, RoutedEventArgs e)
+        private void NewGame_Click(object sender, RoutedEventArgs e)
         {
-            foreach (Control ctrl in connect4Table.Children)
-            {
-                if (Background == Brushes.Red)
-                {
-                    
-                }
-            }
+            
 
-
-
-            for (int i = 0; i < 42; i++)//the amount of buttons in grid
-            {
-
-
-
-
-            }
         }
 
         private void R0C0_Click(object sender, RoutedEventArgs e)
@@ -932,7 +917,7 @@ namespace WPFConnect4
             }
             if (tag == "41")
             {
-                if (R4C0.Background.ToString() == R3C1.Background.ToString() && R3C1.Background.ToString() == R2C1.Background.ToString() && R2C1.Background.ToString() == R1C1.Background.ToString())
+                if (R4C1.Background.ToString() == R3C1.Background.ToString() && R3C1.Background.ToString() == R2C1.Background.ToString() && R2C1.Background.ToString() == R1C1.Background.ToString())
                 {
                     MessageBox.Show("Winner");
                 }
@@ -2049,6 +2034,10 @@ namespace WPFConnect4
 
         }
 
+        private void CloseBtn_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
     }
         
 }

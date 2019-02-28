@@ -66,7 +66,7 @@
             <Button Tag="53" Background="LightGray" x:Name="R5C3" Grid.Row="5" Grid.Column="3" Height="75" Width="75" Click="R0C0_Click"></Button>
             <Button Tag="54" Background="LightGray" x:Name="R5C4" Grid.Row="5" Grid.Column="4" Height="75" Width="75" Click="R0C0_Click"></Button>
             <Button Tag="55" Background="LightGray" x:Name="R5C5" Grid.Row="5" Grid.Column="5" Height="75" Width="75" Click="R0C0_Click"></Button>
-            <Button Tag="56" Background="LightGray" Content="R5C6"  x:Name="R5C6" Grid.Row="5" Grid.Column="6" Height="75" Width="75" Click="R0C0_Click"></Button>
+            <Button Tag="56" Background="LightGray" x:Name="R5C6" Grid.Row="5" Grid.Column="6" Height="75" Width="75" Click="R0C0_Click"></Button>
         </Grid>
 
         <Label FontSize="36" x:Name="gameTitle" Content="Connect 4" HorizontalAlignment="Left" Margin="699,39,0,0" VerticalAlignment="Top" Width="250" Height="50" Background="Transparent" BorderBrush="Black"/>
@@ -74,7 +74,9 @@
         <Label FontSize="28" x:Name="player2Icon" Content="Player 2" HorizontalAlignment="Left" Margin="681,287,0,0" VerticalAlignment="Top" Width="120" Height="50"/>
         <Label x:Name="player2Colour1" Content="" HorizontalAlignment="Left" Margin="821,217,0,0" VerticalAlignment="Top" Height="50" Width="50" Background="Black"/>
         <Label x:Name="player2Colour" Content="" HorizontalAlignment="Left" Margin="821,287,0,0" VerticalAlignment="Top" Height="50" Width="50" Background="Red"/>
-        
+        <Button FontSize="24" x:Name="newGame" Content="New Game" HorizontalAlignment="Left" Margin="681,141,0,0" VerticalAlignment="Top" Width="150" Height="50" Click="NewGame_Click"/>
+        <Button FontSize="24" x:Name="closeBtn" Content="Close" HorizontalAlignment="Left" Margin="681,545,0,0" VerticalAlignment="Top" Width="150" Height="50" Click="CloseBtn_Click"/>
+
         <!--<Button Name="col1" Grid.Row="0" Grid.Column="0" Content="r0c0" />-->
  
     </Grid>

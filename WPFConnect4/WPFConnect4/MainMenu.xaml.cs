@@ -32,8 +32,8 @@ namespace WPFConnect4
 
         private void VsComputer_Click(object sender, RoutedEventArgs e)
         {
-
-
+            PvCwindow win = new PvCwindow();
+            win.Show();
         }
 
         private void InstructionBtn_Click(object sender, RoutedEventArgs e)
